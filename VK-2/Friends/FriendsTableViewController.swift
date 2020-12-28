@@ -9,24 +9,49 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController {
     
+    var sections: [String: [User]] = [:]
+    var keys: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        user.forEach { friend in
+            let firstLetter = String(friend.userName.first!)
+            if sections[firstLetter] != nil {
+                sections[firstLetter]?.append(friend)
+            } else { sections[firstLetter] = [friend] }
+        }
+        keys = Array(sections.keys).sorted(by: <)
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return user.count
+        return sections.count
     }
     
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return keys
+    }
+    
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let key = keys[section]
+        let count = sections[key]!.count
+        return count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return keys[section]
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! FriendsCell
         
-        cell.friendName.text! = user[indexPath.row].userName
-        cell.friendCustomImageView.setImage(user[indexPath.row].userImage)
+        let key = keys[indexPath.section]
+        let friend = sections[key]![indexPath.row]
+        
+        cell.friendName.text! = friend.userName
+        cell.friendCustomImageView.setImage(friend.userImage)
         
         return cell
     }

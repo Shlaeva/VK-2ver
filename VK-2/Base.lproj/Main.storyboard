@@ -256,15 +256,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="96" id="qll-mU-yba" customClass="FriendsCell" customModule="VK_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="96"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="100" id="qll-mU-yba" customClass="FriendsCell" customModule="VK_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qll-mU-yba" id="btO-Y6-ofg">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-nL-5rF">
-                                            <rect key="frame" x="142" y="11" width="236" height="25"/>
+                                            <rect key="frame" x="148" y="10" width="230" height="25"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="25" id="n8P-te-ajc"/>
                                             </constraints>
@@ -273,11 +273,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYM-BI-vEY" customClass="CustomImageView" customModule="VK_2" customModuleProvider="target">
-                                            <rect key="frame" x="36" y="11" width="74" height="74"/>
+                                            <rect key="frame" x="36" y="10" width="80" height="80"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="74" id="BCK-d5-CHk"/>
-                                                <constraint firstAttribute="width" constant="74" id="ey0-6F-och"/>
+                                                <constraint firstAttribute="height" constant="80" id="BCK-d5-CHk"/>
+                                                <constraint firstAttribute="width" constant="80" id="ey0-6F-och"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
@@ -328,24 +328,24 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JYf-DW-2mh">
-                            <size key="itemSize" width="250" height="250"/>
+                            <size key="itemSize" width="350" height="350"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PictureCell" translatesAutoresizingMaskIntoConstraints="NO" id="0hM-2b-GkJ" customClass="PicturesCell" customModule="VK_2" customModuleProvider="target">
-                                <rect key="frame" x="82" y="0.0" width="250" height="250"/>
+                                <rect key="frame" x="32" y="0.0" width="350" height="360"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0w1-99-QTJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="360"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" image="albus_2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEX-Em-ju0">
-                                            <rect key="frame" x="25" y="25" width="200" height="200"/>
+                                            <rect key="frame" x="25" y="25" width="300" height="310"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="ogt-UV-XdJ" customClass="LikeControl" customModule="VK_2" customModuleProvider="target">
-                                            <rect key="frame" x="25" y="225" width="50" height="25"/>
+                                            <rect key="frame" x="25" y="335" width="50" height="25"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="vW2-UQ-rC6"/>
@@ -367,7 +367,7 @@
                                         <constraint firstItem="fEX-Em-ju0" firstAttribute="leading" secondItem="0w1-99-QTJ" secondAttribute="leading" constant="25" id="yjh-qS-wzc"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="250" height="250"/>
+                                <size key="customSize" width="350" height="360"/>
                                 <connections>
                                     <outlet property="pictureImage" destination="fEX-Em-ju0" id="zef-wm-9Da"/>
                                 </connections>
