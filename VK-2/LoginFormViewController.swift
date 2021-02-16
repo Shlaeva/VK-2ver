@@ -47,9 +47,9 @@ class LoginFormViewController: UIViewController {
         
 
         
-        loadingView1 = UIView(frame: CGRect(x: self.view.bounds.width / 2 - 40, y: 600, width: 20, height: 20))
-        loadingView2 = UIView(frame: CGRect(x: self.view.bounds.width / 2 - 10, y: 600, width: 20, height: 20))
-        loadingView3 = UIView(frame: CGRect(x: self.view.bounds.width / 2 + 20, y: 600, width: 20, height: 20))
+        loadingView1 = UIView(frame: CGRect(x: self.view.bounds.width / 2 - 40, y: self.view.bounds.height * 0.8, width: 20, height: 20))
+        loadingView2 = UIView(frame: CGRect(x: self.view.bounds.width / 2 - 10, y: self.view.bounds.height * 0.8, width: 20, height: 20))
+        loadingView3 = UIView(frame: CGRect(x: self.view.bounds.width / 2 + 20, y: self.view.bounds.height * 0.8, width: 20, height: 20))
         
         
         loadingView1.clipsToBounds = true
